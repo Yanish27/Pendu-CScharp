@@ -1,0 +1,98 @@
+﻿<Window x:Class="PetitJeu1310.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PetitJeu1310"
+        mc:Ignorable="d"
+        Title="Jeu du pendu" Height="450" Width="722" Background="BurlyWood">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <!-- ZONE TITLE -->
+        <Grid Grid.Row="0">
+            <Label x:Name="LblMot" Content="x x x x x x x" HorizontalAlignment="Center" Background="Transparent" FontSize="18"></Label>
+        </Grid>
+
+        <!-- ZONE CENTER -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="6*"/>
+            </Grid.ColumnDefinitions>
+            <!-- ZONE TITLE -->
+            <Grid Grid.Column="0">
+                <Image x:Name="Img" HorizontalAlignment="Center" Height="236"  VerticalAlignment="Center" Source="/7.png"/>
+            </Grid>
+            <!-- ZONE TITLE -->
+            <Grid Grid.Column="1">
+
+            </Grid>
+            <!-- ZONE TITLE -->
+            <Grid Grid.Column="2">
+                <Grid.Resources>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="Orange"></Setter>
+                        <Setter Property="FontSize" Value="15"></Setter>
+                        <Setter Property="BorderBrush" Value="Brown"></Setter>
+                        <Setter Property="Padding" Value="9"></Setter>
+                        <Setter Property="Margin" Value="5"></Setter>
+                    </Style>
+                </Grid.Resources>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="72.2"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Button Name="A" Grid.Row="0" Grid.Column="0" Content="A" Click="ButtonClick"></Button>
+                <Button Name="B" Grid.Row="0" Grid.Column="1" Content="B" Click="ButtonClick"></Button>
+                <Button Name="C" Grid.Row="0" Grid.Column="2" Content="C" Click="ButtonClick"></Button>
+                <Button Name="D" Grid.Row="0" Grid.Column="3" Content="D" Click="ButtonClick"></Button>
+                <Button Name="E" Grid.Row="0" Grid.Column="4" Content="E" Click="ButtonClick"></Button>
+                <Button Name="F" Grid.Row="1" Grid.Column="0" Content="F" Click="ButtonClick"></Button>
+                <Button Name="G" Grid.Row="1" Grid.Column="1" Content="G" Click="ButtonClick"></Button>
+                <Button Name="H" Grid.Row="1" Grid.Column="2" Content="H" Click="ButtonClick"></Button>
+                <Button Name="I" Grid.Row="1" Grid.Column="3" Content="I" Click="ButtonClick"></Button>
+                <Button Name="J" Grid.Row="1" Grid.Column="4" Content="J" Click="ButtonClick"></Button>
+                <Button Name="K" Grid.Row="2" Grid.Column="0" Content="K" Click="ButtonClick"></Button>
+                <Button Name="L" Grid.Row="2" Grid.Column="1" Content="L" Click="ButtonClick"></Button>
+                <Button Name="M" Grid.Row="2" Grid.Column="2" Content="M" Click="ButtonClick"></Button>
+                <Button Name="N" Grid.Row="2" Grid.Column="3" Content="N" Click="ButtonClick"></Button>
+                <Button Name="O" Grid.Row="2" Grid.Column="4" Content="O" Click="ButtonClick"></Button>
+                <Button Name="P" Grid.Row="3" Grid.Column="0" Content="P" Click="ButtonClick"></Button>
+                <Button Name="Q" Grid.Row="3" Grid.Column="1" Content="Q" Click="ButtonClick"></Button>
+                <Button Name="R" Grid.Row="3" Grid.Column="2" Content="R" Click="ButtonClick"></Button>
+                <Button Name="S" Grid.Row="3" Grid.Column="3" Content="S" Click="ButtonClick"></Button>
+                <Button Name="T" Grid.Row="3" Grid.Column="4" Content="T" Click="ButtonClick"></Button>
+                <Button Name="U" Grid.Row="4" Grid.Column="0" Content="U" Click="ButtonClick"></Button>
+                <Button Name="V" Grid.Row="4" Grid.Column="1" Content="V" Click="ButtonClick"></Button>
+                <Button Name="W" Grid.Row="4" Grid.Column="2" Content="W" Click="ButtonClick"></Button>
+                <Button Name="X" Grid.Row="4" Grid.Column="3" Content="X" Click="ButtonClick"></Button>
+                <Button Name="Y" Grid.Row="4" Grid.Column="4" Content="Y" Click="ButtonClick"></Button>
+                <Button Name="Z" Grid.Row="5" Grid.Column="2" Content="Z" Click="ButtonClick"></Button>
+            </Grid>
+        </Grid>
+        <!-- ZONE FOOTER -->
+        <Grid Grid.Row="2">
+            <Label Content="Il vous reste xx essaies." HorizontalAlignment="Center"></Label>
+        </Grid>
+    </Grid>
+</Window>

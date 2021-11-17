@@ -282,6 +282,9 @@ namespace PetitJeu1310
             // Dans le cas contraire, l'image ne changera pas
             Uri resourceUri = new Uri(Global.essai + ".png", UriKind.Relative);
             Img.Source = new BitmapImage(resourceUri);
+
+            // On change le texte en footer
+            NbEssais.Content = "Il vous reste "+ Convert.ToString((8- Convert.ToInt32(Global.essai))) +" essais.";
         }
         private void ButtonClick(object sender, RoutedEventArgs e)
         {

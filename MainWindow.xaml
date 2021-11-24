@@ -92,7 +92,7 @@
         </Grid>
         <!-- ZONE FOOTER -->
         <Grid Grid.Row="2">
-            <Label Content="Il vous reste xx essaies." HorizontalAlignment="Center"></Label>
+            <Label Content="Il vous reste 8 essaies." HorizontalAlignment="Center" Name="essai"></Label>
         </Grid>
     </Grid>
 </Window>
